@@ -4,10 +4,15 @@
   "description": "hr manage backend hackathon ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
@@ -16,5 +21,8 @@
     "mongoose": "^5.11.13",
     "swagger-jsdoc": "^6.0.1",
     "swagger-ui-express": "^4.1.6"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
