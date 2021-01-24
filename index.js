@@ -11,6 +11,8 @@ const router_delete= require('./router/router_delete');
 const router_update= require('./router/router_update');
 const empRegister  = require('./router/employeeRouter');
 const cors = require('cors');
+const normalizePort = port => parseInt(port,10);
+const PORT = normalizePort(process.env.PORT || 5000);
 
 
 const swaggerOptions = {
@@ -54,4 +56,4 @@ app.use('/delete',router_delete);
 app.use('/update',router_update);
 app.get('/',(req,res)=>res.send('hello world'));
 
-app.listen('8000',function(){console.log('app started at port 8000')});
+app.listen(PORT,function(){console.log('app started at port',PORT)});
